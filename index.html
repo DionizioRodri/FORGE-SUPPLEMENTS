@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FORGE SUPPLEMENTS - Suplementos de alta performance para atletas. Whey, creatina, pré-treino e muito mais.">
+    <title>FORGE SUPPLEMENTS | Suplementos para Atletas</title>
+
+    <!-- Font Awesome 6 (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =============================================
+         HEADER / NAVEGAÇÃO
+         ============================================= -->
+    <header>
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-dumbbell"></i>
+                <span>FORGE<span class="logo-highlight">SUPP</span></span>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="cart-icon" id="cartIcon" aria-label="Abrir carrinho" role="button" tabindex="0">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- =============================================
+         HERO / BANNER PRINCIPAL
+         ============================================= -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">
+                    <i class="fas fa-bolt"></i> ENERGIA MÁXIMA
+                </span>
+                <h1>ALIMENTE SUA <span class="highlight">FORÇA</span></h1>
+                <p>
+                    Suplementos de alta performance para atletas que não aceitam menos que a vitória.
+                    Fórmulas avançadas, pureza testada e resultados reais.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#produtos" class="btn btn-primary">
+                        <i class="fas fa-fire"></i> COMPRAR AGORA
+                    </a>
+                    <a href="#beneficios" class="btn btn-outline">
+                        <i class="fas fa-play"></i> SAIBA MAIS
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>+15k</strong>
+                        <span>Atletas</span>
+                    </div>
+                    <div>
+                        <strong>100%</strong>
+                        <span>Puro</span>
+                    </div>
+                    <div>
+                        <strong>4.9★</strong>
+                        <span>Avaliação</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=600&auto=format&fit=crop&q=80"
+                    alt="Atleta segurando suplemento"
+                    loading="lazy">
+                <div class="hero-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+         BENEFÍCIOS
+         ============================================= -->
+    <section id="beneficios" class="beneficios">
+        <div class="container">
+            <div class="beneficios-grid">
+                <div class="beneficio-item">
+                    <i class="fas fa-flask"></i>
+                    <h3>Pureza Garantida</h3>
+                    <p>Testes laboratoriais em cada lote produzido.</p>
+                </div>
+                <div class="beneficio-item">
+                    <i class="fas fa-truck-fast"></i>
+                    <h3>Entrega Rápida</h3>
+                    <p>Enviamos para todo o Brasil com rastreio.</p>
+                </div>
+                <div class="beneficio-item">
+                    <i class="fas fa-medal"></i>
+                    <h3>Alta Performance</h3>
+                    <p>Fórmulas desenvolvidas por especialistas.</p>
+                </div>
+                <div class="beneficio-item">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Parcele em 12x</h3>
+                    <p>Condições especiais no cartão de crédito.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+         PRODUTOS / VITRINE
+         ============================================= -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <div class="section-header">
+                <h2>NOSSOS <span class="highlight">SUPLEMENTOS</span></h2>
+                <p>Potencialize seu treino com o que há de melhor</p>
+            </div>
+
+            <!-- FILTROS DINÂMICOS -->
+            <div class="filtros">
+                <div class="filtro-group">
+                    <label for="filtroCategoria">
+                        <i class="fas fa-tag"></i> Categoria
+                    </label>
+                    <select id="filtroCategoria">
+                        <option value="todos">Todas</option>
+                        <option value="whey">Whey Protein</option>
+                        <option value="creatina">Creatina</option>
+                        <option value="pre-treino">Pré-Treino</option>
+                        <option value="bcaa">BCAA</option>
+                        <option value="hipercalorico">Hipercalórico</option>
+                    </select>
+                </div>
+
+                <div class="filtro-group">
+                    <label for="filtroPreco">
+                        <i class="fas fa-dollar-sign"></i> Faixa de Preço
+                    </label>
+                    <select id="filtroPreco">
+                        <option value="todos">Todos</option>
+                        <option value="0-150">Até R$ 150</option>
+                        <option value="150-250">R$ 150 - R$ 250</option>
+                        <option value="250-400">R$ 250 - R$ 400</option>
+                        <option value="400+">Acima de R$ 400</option>
+                    </select>
+                </div>
+
+                <div class="filtro-group">
+                    <label for="filtroAvaliacao">
+                        <i class="fas fa-star"></i> Avaliação Mínima
+                    </label>
+                    <select id="filtroAvaliacao">
+                        <option value="0">Todas</option>
+                        <option value="4">4+ estrelas</option>
+                        <option value="4.5">4.5+ estrelas</option>
+                    </select>
+                </div>
+
+                <button class="btn-limpar" id="limparFiltros" type="button">
+                    <i class="fas fa-rotate-left"></i> Limpar
+                </button>
+            </div>
+
+            <!-- GRID DE PRODUTOS (preenchido via JavaScript) -->
+            <div class="produtos-grid" id="produtosGrid"></div>
+
+            <p class="sem-produtos" id="semProdutos" style="display: none;">
+                <i class="fas fa-search"></i> Nenhum produto encontrado com os filtros selecionados.
+            </p>
+        </div>
+    </section>
+
+    <!-- =============================================
+         CONTATO / NEWSLETTER
+         ============================================= -->
+    <section id="contato" class="contato">
+        <div class="container contato-content">
+            <div class="contato-text">
+                <h2>RECEBA <span class="highlight">OFERTAS EXCLUSIVAS</span></h2>
+                <p>
+                    Assine nossa newsletter e ganhe 10% de desconto na primeira compra.
+                    Fique por dentro de lançamentos e dicas de treino.
+                </p>
+
+                <form id="newsletterForm" novalidate>
+                    <div class="form-group">
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Seu nome"
+                            required
+                            autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Seu melhor e-mail"
+                            required
+                            autocomplete="email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> QUERO DESCONTO
+                    </button>
+                </form>
+
+                <p class="form-mensagem" id="formMensagem"></p>
+            </div>
+
+            <div class="contato-image">
+                <i class="fas fa-envelope-open-text"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+         FOOTER
+         ============================================= -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="logo">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>FORGE<span class="logo-highlight">SUPP</span></span>
+                </div>
+                <p>
+                    Suplementos de alta performance para atletas que buscam
+                    evolução constante e resultados reais.
+                </p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Atendimento</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> contato@forgesupp.com</li>
+                    <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                    <li><i class="fas fa-map-pin"></i> São Paulo - SP</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 FORGE SUPPLEMENTS. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+            <p class="disclaimer">
+                *Este produto não substitui uma alimentação equilibrada. Consulte um nutricionista.
+            </p>
+        </div>
+    </footer>
+
+    <!-- =============================================
+         CARRINHO LATERAL
+         ============================================= -->
+    <div class="carrinho-overlay" id="carrinhoOverlay"></div>
+
+    <aside class="carrinho-lateral" id="carrinhoLateral" aria-label="Carrinho de compras">
+        <div class="carrinho-header">
+            <h3><i class="fas fa-shopping-bag"></i> Seu Carrinho</h3>
+            <button class="fechar-carrinho" id="fecharCarrinho" aria-label="Fechar carrinho">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="carrinho-itens" id="carrinhoItens">
+            <p class="carrinho-vazio">Seu carrinho está vazio.</p>
+        </div>
+
+        <div class="carrinho-footer" id="carrinhoFooter">
+            <div class="total">
+                <span>Total:</span>
+                <span id="carrinhoTotal">R$ 0,00</span>
+            </div>
+            <button class="btn btn-primary btn-finalizar" id="finalizarCompra" type="button">
+                <i class="fas fa-check"></i> FINALIZAR COMPRA
+            </button>
+        </div>
+    </aside>
+
+    <!-- =============================================
+         TOAST DE NOTIFICAÇÃO
+         ============================================= -->
+    <div class="toast" id="toast"></div>
+
+    <!-- JavaScript Principal -->
+    <script src="script.js"></script>
+</body>
+</html>
